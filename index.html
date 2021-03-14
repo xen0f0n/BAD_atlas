@@ -21,23 +21,42 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <h1 class="text-center">The Breakdown of Arctic Development (BAD) Atlas<br></h1>
-                    <p class="text-justify text-white"><br>As the Artic is ravaged by climate change, the rich natural resources of the Arctic are expected to become increasingly accessible due to melting sea ice and thawing permafrost. In combination with the increasing accessibility, as natural resources are depleted elsewhere, there is increasing pressure on Arctic nations to further develop the Arctic. However, if the world is to stay on target to stay below 2 degrees of warming then it has been estimated that 80% of the worlds known fossil fuel reserves must stay unburned in the ground.<br><br></p>
+                    <p class="text-justify text-white"><br>
+                        The Breakdown of Arctic Development (or BAD) Atlas is a webtool designed to inform policy makers of the encroachment of human activity within the precious Arctic environment as it becomes accessible due to climate change. 
+                        For this project we wanted to combine automated detection algorithms with a user-friendly design to give a real time picture of unsustainable development occurring in the Arctic. 
+                        Our prototype focuses on oil, with a classification algorithm for oil spills, and a detection algorithm for finding offshore platforms. Using similar techniques the BAD Atlas would eventually show a range of activity including mining and fishing.<br><br>
+
+                        This satellite imagery shows the 2020 Norilisk Oil spill in the Arctic Circle in Russia. 
+                        The oil spill occurred when a fuel reservoir built on permafrost collapsed and 20,000 Tons of diesel leaked into the nearby river. 
+                        The first panel shows a before and after image of the spill. You can see the rusty red coloration of the river where the diesel has been spilled. 
+                        In the second panel we show the area classified by the algorithm.<br><br></p>
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-6">
                             <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://twonzo72.users.earthengine.app/view/oilspillrussia"></iframe></div>
                             <p class="text-light" style="text-align:center">Norilsk oil spill (before/after)</p>
                         </div>
-                        <div class="col-12">
+                        <div class="col-6">
                             <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://twonzo72.users.earthengine.app/view/oilspillclassification"></iframe></div>
                             <p class="text-light" style="text-align:center">Norilsk oil spill detection<br></p>
                         </div>
                     </div>
-                    <p class="text-justify text-light"><br><br>The second element is a prototype of offshore oil platform detection. We used synthetic aperture radar (SAR) data from the Sentinel 1 satellite to identify the location of persistent manmade objects in the ocean. We have compared this with known locations of offshore platforms in the Gulf coast and the North Sea. This is all implemented within a Google Earth Engine Application. In principle this could be scaled to map across the whole Arctic region and updated at regular intervals to provide an open dataset of oil rig locations.<br>Although we focused on oil platforms for this project, we were also interested in monitoring other forms of resource extraction such as illegal fishing. We believe that this could be achieved using a similar technique to our offshore oil platform detection algorithm. Ship detection is a well-studied field and ships can be seen readily using SAR data. While ships also typically use the Automated Identification System (AIS) to broadcast their location data, vessels engaged in illegal activities have been known to turn off their AIS transceivers. By identifying ‘ghost-vessels’ which appear using ship detection but are not broadcasting using AIS, we hope to give an indication of vessels which might be engaged in illegal fishing.<br>By incorporating these datasets in a visually appealing web-based platform we hope to be able to provide a service that will be informative to policy makers who may not intuitively realise &nbsp;the extent of resource extraction in the Arctic. The combination of automated algorithms and a user-friendly design will help our nations’ leaders understand encroachment of human activity on what should be a pristine Arctic environment we all want to protect.<br><br></p>
+                    <!-- <p class="text-justify text-light"><br><br>
+                        The second element is a prototype of offshore oil platform detection. We used synthetic aperture radar (SAR) data from the Sentinel 1 satellite to identify the location of persistent manmade objects in the ocean. 
+                        We have compared this with known locations of offshore platforms in the Gulf coast and the North Sea. This is all implemented within a Google Earth Engine Application. In principle this could be scaled to map across the whole Arctic region and updated at regular intervals to provide an open dataset of oil rig locations.<br>Although we focused on oil platforms for this project, we were also interested in monitoring other forms of resource extraction such as illegal fishing. We believe that this could be achieved using a similar technique to our offshore oil platform detection algorithm. Ship detection is a well-studied field and ships can be seen readily using SAR data. While ships also typically use the Automated Identification System (AIS) to broadcast their location data, vessels engaged in illegal activities have been known to turn off their AIS transceivers. By identifying ‘ghost-vessels’ which appear using ship detection but are not broadcasting using AIS, we hope to give an indication of vessels which might be engaged in illegal fishing.<br>By incorporating these datasets in a visually appealing web-based platform we hope to be able to provide a service that will be informative to policy makers who may not intuitively realise &nbsp;the extent of resource extraction in the Arctic. 
+                        The combination of automated algorithms and a user-friendly design will help our nations’ leaders understand encroachment of human activity on what should be a pristine Arctic environment we all want to protect.<br><br></p> -->
+
+                    <p class="text-justify text-white"><br>
+                        We wanted to provide an up to date database of offshore platforms within the arctic circle. 
+                        As a proof of concept we made a detection algorithm using synthetic aperture radar imagery. 
+                        Our detections can be compared against known locations of oil platforms in the Gulf of Mexico and the North Sea. 
+                        In the final BAD Atlas, our algorithm could be used to keep an up-to-date map of all the offshore platforms in the Arctic. 
+                        Used with the oil spill classification algorithm we could monitor the platforms for spills in real time.<br><br></p>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
+                
                 <div class="col">
                     <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://danielhirst1998.users.earthengine.app/view/hackthearctic"></iframe></div>
                 </div>
