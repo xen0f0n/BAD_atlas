@@ -1,0 +1,16 @@
+.col-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.text-light {
+  color: #f8f9fa!important;
+  font-family: 'Advent Pro';
+}
+
+.text-white {
+  color: #fff!important;
+  font-family: 'Advent Pro';
+}
+
